@@ -37,9 +37,9 @@ buscar.addEventListener('click',function(event) {
     console.log(buscarValor.value);
     let pais = document.querySelector(".value").value;
     if (pais === ''){
-        userAction('https://restcountries.eu/rest/v2/all');
+        userAction('https://restcountries.com/v2/all');
     }else{
-        userAction(`https://restcountries.eu/rest/v2/name/${pais}}`);
+        userAction(`https://restcountries.com/v2/name/${pais}`);
     }
     
     event.preventDefault();
